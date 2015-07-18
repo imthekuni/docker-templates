@@ -44,5 +44,5 @@
   </Data>
   <WebUI></WebUI>
   <Banner></Banner>
-  <Icon>https://github.com/imthekuni/docker-templates/blob/master/imthekuni/images/makemkv.png</Icon>
+  <Icon>https://raw.githubusercontent.com/imthekuni/docker-templates/master/imthekuni/images/makemkv.png</Icon>
 </Containers>
