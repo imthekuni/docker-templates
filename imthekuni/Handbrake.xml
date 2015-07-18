@@ -60,5 +60,5 @@
   </Data>
   <WebUI>http://[IP]:[PORT:4040]/</WebUI>
   <Banner></Banner>
-  <Icon></Icon>
+  <Icon>https://github.com/imthekuni/docker-templates/blob/master/imthekuni/images/makemkv.png</Icon>
 </Containers>
