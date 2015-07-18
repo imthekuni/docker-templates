@@ -17,7 +17,7 @@
   <Support>http://lime-technology.com/forum/index.php?topic=38055.0</Support>
   <Registry>https://registry.hub.docker.com/u/imthekuni/makemkv/</Registry>
   <GitHub>https://github.com/imthekuni/makemkv</GitHub>
-  <Repository>binhex/makemkv</Repository>
+  <Repository>imthekuni/makemkv</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
