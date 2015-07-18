@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>MediaApp:Video</Category>
+  <Name>imthekuni-makemkv</Name>
+  <Description>
+    MakeMKV.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where MakeMKV will store it's configuration file, database and logs.[br]
+    [b]/Input[/b] This is where MakeMKV will scan for ripped discs.[br][br]
+    [b]/Output[/b] This is where MakeMKV will output converted videos. [br][br]
+    [b]Note[/b] If you wish to use HTTP then please set the Environment Variable "SSL" to "no", otherwise set to "yes" to enable HTTPS.
+  </Description>
+  <Overview>
+    MakeMKV
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=38055.0</Support>
+  <Registry>https://registry.hub.docker.com/u/imthekuni/makemkv/</Registry>
+  <GitHub>https://github.com/imthekuni/makemkv</GitHub>
+  <Repository>binhex/makemkv</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>4040</HostPort>
+        <ContainerPort>4040</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>4050</HostPort>
+        <ContainerPort>4050</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>SSL</Name>
+      <Value>yes</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>path to input</HostDir>
+      <ContainerDir>/Input</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>path to output</HostDir>
+      <ContainerDir>/Output</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:4040]/</WebUI>
+  <Banner></Banner>
+  <Icon></Icon>
+</Containers>
