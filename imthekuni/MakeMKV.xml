@@ -28,12 +28,7 @@
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>path to input</HostDir>
-      <ContainerDir>/Input</ContainerDir>
+      <ContainerDir>/nobody/.MakeMKV</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
