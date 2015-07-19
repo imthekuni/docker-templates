@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category></Category>
+  <Name>suchja-wine</Name>
+  <Description>
+    Have you ever wanted to run an application for Microsoft Windows in a Docker container? I did and that is what you can use this image for.[br]
+    My motivation for this image was to be able to create windows installer packages (known as MSI). Thus I'm using this image as a base image for suchja/wix. I'm sure that there are lots of other use cases. If you have one, please leave a comment on the docker hub repository for this image.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where Wine will store it's configuration file, database and logs.[br]
+    [b]/Input[/b] This is where Wine will scan for ripped discs.[br][br]
+    [b]/Output[/b] This is where Wine will output converted videos. [br][br]
+  </Description>
+  <Overview>
+    suchja-wine
+  </Overview>
+  <Support></Support>
+  <Registry>https://registry.hub.docker.com/u/suchja/wine/</Registry>
+  <GitHub>https://github.com/suchja/wine</GitHub>
+  <Repository>suchja/wine:latest</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://www.winehq.org/images/winehq_logo_glass.png</Icon>
+</Containers>
