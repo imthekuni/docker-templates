@@ -27,6 +27,11 @@
     </Variable>
   </Environment>
   <Data>
+    <Volume>
+      <HostDir>path to output</HostDir>
+      <ContainerDir>/home/xlcient/.wine</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <WebUI></WebUI>
   <Banner></Banner>
