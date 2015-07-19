@@ -2,7 +2,7 @@
 <Containers>
 <Beta>False</Beta>
 <Category>MediaApp:Video</Category>
-  <Name>Wine</Name>
+  <Name>wine</Name>
   <Description>
     Wine allows you to run Windows executables in a linux environment.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
@@ -15,7 +15,7 @@
   <Support></Support>
   <Registry>https://registry.hub.docker.com/u/imthekuni/Wine/</Registry>
   <GitHub>https://github.com/imthekuni/Wine</GitHub>
-  <Repository>imthekuni/Wine</Repository>
+  <Repository>imthekuni/wine</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
