@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>MediaApp:Video</Category>
+  <Name>Wine</Name>
+  <Description>
+    Wine allows you to run Windows executables in a linux environment.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where Wine will store it's configuration file, database and logs.[br]
+    [b]/wine[/b] This is where Wine will store executables. [br][br]
+  </Description>
+  <Overview>
+    MakeMKV
+  </Overview>
+  <Support></Support>
+  <Registry>https://registry.hub.docker.com/u/imthekuni/Wine/</Registry>
+  <GitHub>https://github.com/imthekuni/Wine</GitHub>
+  <Repository>imthekuni/Wine</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>SSL</Name>
+      <Value>yes</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>path to executables</HostDir>
+      <ContainerDir>/Wine</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://www.winehq.org/images/winehq_logo_glass_sm.png</Icon>
+</Containers>
