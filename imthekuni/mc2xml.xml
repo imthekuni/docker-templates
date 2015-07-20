@@ -7,12 +7,12 @@
     mc2xml.[br][br]
   </Description>
   <Overview>
-    MakeMKV
+    mc2xml
   </Overview>
   <Support></Support>
-  <Registry>https://registry.hub.docker.com/u/imthekuni/Wine/</Registry>
-  <GitHub>https://github.com/imthekuni/Wine</GitHub>
-  <Repository>imthekuni/wine</Repository>
+  <Registry>https://registry.hub.docker.com/u/imthekuni/mc2xml/</Registry>
+  <GitHub>https://github.com/imthekuni/mc2xml</GitHub>
+  <Repository>imthekuni/mc2xml</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
