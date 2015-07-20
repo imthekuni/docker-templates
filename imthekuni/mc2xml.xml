@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>MediaApp:Video</Category>
+  <Name>mc2xml</Name>
+  <Description>
+    mc2xml.[br][br]
+  </Description>
+  <Overview>
+    MakeMKV
+  </Overview>
+  <Support></Support>
+  <Registry>https://registry.hub.docker.com/u/imthekuni/Wine/</Registry>
+  <GitHub>https://github.com/imthekuni/Wine</GitHub>
+  <Repository>imthekuni/wine</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>SSL</Name>
+      <Value>yes</Value>
+    </Variable>
+  </Environment>
+  <Data>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>http://img1.wikia.nocookie.net/__cb20121203231153/logopedia/images/0/02/TVGuide1990s.png</Icon>
+</Containers>
