@@ -22,6 +22,11 @@
     </Variable>
   </Environment>
   <Data>
+    <Volume>
+      <HostDir>path to output</HostDir>
+      <ContainerDir>/mc2xml</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <WebUI></WebUI>
   <Banner></Banner>
