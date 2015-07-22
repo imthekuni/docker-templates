@@ -11,7 +11,7 @@
     [b]/Output[/b] This is where MakeMKV will output converted videos. [br][br]
   </Description>
   <Overview>
-    MakeMKV
+    makemkv
   </Overview>
   <Support></Support>
   <Registry>https://registry.hub.docker.com/u/imthekuni/makemkv/</Registry>
