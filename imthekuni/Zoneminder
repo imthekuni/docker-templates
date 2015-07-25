@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>HomeAutomation</Category>
+  <Name>ZoneMinder</Name>
+  <Description>
+    My unRaid XML for Kyle Johnson's Zoneminder docker[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where Zoneminder will store it's configuration file, database and logs.[br]
+    [b]/Output[/b] This is where Zoneminder will store captured video/images. [br][br]
+  </Description>
+  <Overview>
+    Zoneminder
+  </Overview>
+  <Support></Support>
+  <Registry>https://registry.hub.docker.com/u/kylejohnson/zoneminder</Registry>
+  <GitHub>https://github.com/kylejohnson/zoneminder</GitHub>
+  <Repository>kylejohnson/zoneminder</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Environment>
+    <Variable>
+      <Name>SSL</Name>
+      <Value>yes</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>path to output</HostDir>
+      <ContainerDir>/Output</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/onO7OWp.png</Icon>
+</Containers>
