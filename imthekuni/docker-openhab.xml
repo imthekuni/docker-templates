@@ -2,9 +2,9 @@
 <Containers>
 <Beta>False</Beta>
 <Category>MediaApp:Video</Category>
-  <Name>openhab</Name>
+  <Name>docker-openhab</Name>
   <Description>
-    mc2xml.[br][br]
+    OpenHab for Docker v1.8.0[br][br]
   </Description>
   <Overview>
     openhab
