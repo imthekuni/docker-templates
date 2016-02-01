@@ -10,9 +10,9 @@
     openhab
   </Overview>
   <Support></Support>
-  <Registry>https://registry.hub.docker.com/u/imthekuni/openhab/</Registry>
-  <GitHub>https://github.com/imthekuni/openhab</GitHub>
-  <Repository>imthekuni/openhab</Repository>
+  <Registry>https://registry.hub.docker.com/u/imthekuni/docker-openhab/</Registry>
+  <GitHub>https://github.com/imthekuni/docker-openhab</GitHub>
+  <Repository>imthekuni/docker-openhab</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
