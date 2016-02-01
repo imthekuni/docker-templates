@@ -1,34 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
-<Beta>False</Beta>
-<Category>MediaApp:Video</Category>
+<Container>
+  <Beta>False</Beta>
+  <Category>HomeAutomation:</Category>
   <Name>docker-openhab</Name>
   <Description>
-    OpenHab for Docker v1.8.0[br][br]
+    openHAB is an open source home automation solution capable of interfacing with many different controllers and "Internet of Things" devices
   </Description>
   <Overview>
-    openhab
+    openHAB is an open source home automation solution capable of interfacing with many different controllers and "Internet of Things" devices
   </Overview>
-  <Support></Support>
-  <Registry>https://registry.hub.docker.com/u/imthekuni/docker-openhab/</Registry>
+  <Support>http://lime-technology.com/forum/index.php?topic=38930.0</Support>
+  <Registry>https://registry.hub.docker.com/u/imthekuni/docker-openhab</Registry>
   <GitHub>https://github.com/imthekuni/docker-openhab</GitHub>
   <Repository>imthekuni/docker-openhab</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8484</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
   <Environment>
-    <Variable>
-      <Name>SSL</Name>
-      <Value>no</Value>
-    </Variable>
   </Environment>
   <Data>
     <Volume>
-      <HostDir>path to output</HostDir>
-      <ContainerDir>/openhab</ContainerDir>
+      <HostDir>/mnt/cache/appdata/openhab/config</HostDir>
+      <ContainerDir>/etc/openhab</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI></WebUI>
-  <Banner></Banner>
-  <Icon>http://i.imgur.com/9bGYXdf.png</Icon>
-</Containers>
+    <Data>
+    <Volume>
+      <HostDir>/etc/localtime</HostDir>
+      <ContainerDir>/etc/localtime</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <Icon>https://raw.githubusercontent.com/jshridha/templates/master/Bungy/Icons/openhab-logo-square.png</Icon>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Banner>https://raw.githubusercontent.com/jshridha/templates/master/Bungy/Icons/openhab_banner.png</Banner>
+</Container>
