@@ -18,7 +18,7 @@
   <Environment>
     <Variable>
       <Name>SSL</Name>
-      <Value>yes</Value>
+      <Value>no</Value>
     </Variable>
   </Environment>
   <Data>
