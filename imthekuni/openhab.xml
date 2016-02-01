@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>MediaApp:Video</Category>
+  <Name>openhab</Name>
+  <Description>
+    mc2xml.[br][br]
+  </Description>
+  <Overview>
+    openhab
+  </Overview>
+  <Support></Support>
+  <Registry>https://registry.hub.docker.com/u/imthekuni/openhab/</Registry>
+  <GitHub>https://github.com/imthekuni/openhab</GitHub>
+  <Repository>imthekuni/openhab</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>SSL</Name>
+      <Value>yes</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>path to output</HostDir>
+      <ContainerDir>/openhab</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/9bGYXdf.png</Icon>
+</Containers>
