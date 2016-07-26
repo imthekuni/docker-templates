@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Work</Category>
+  <Name>Citrix-Receiver</Name>
+  <Description>
+    Citrix Receiver App
+  </Description>
+  <Overview>
+    Citrix Receiver App
+  </Overview>
+  <Support></Support>
+  <Registry>https://registry.hub.docker.com/u/imthekuni/citrix-receiver</Registry>
+  <GitHub>https://github.com/imthekuni/citrix-receiver</GitHub>
+  <Repository>imthekuni/citrix-receiver</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort></HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+            <Port>
+        <HostPort></HostPort>
+        <ContainerPort>3389</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Data>
+    <Volume>
+      <HostDir>/etc/localtime</HostDir>
+      <ContainerDir>/etc/localtime</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <Icon>https://raw.githubusercontent.com/jshridha/templates/master/Bungy/Icons/openhab-logo-square.png</Icon>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Banner>https://raw.githubusercontent.com/jshridha/templates/master/Bungy/Icons/openhab_banner.png</Banner>
+</Container>
