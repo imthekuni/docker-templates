@@ -2,7 +2,7 @@
 <Container>
   <Beta>False</Beta>
   <Category>Work</Category>
-  <Name>Citrix-Receiver-XRDP</Name>
+  <Name>citrix-receiver-xrdp</Name>
   <Description>
     Citrix Receiver App
   </Description>
